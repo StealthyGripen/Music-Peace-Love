@@ -1,0 +1,705 @@
+@charset "UTF-8";
+
+/*Outlines all divs*/
+
+
+/*div {
+  outline: deeppink dotted;
+}*/
+
+
+/*Sets body*/
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+/*Sets page containers*/
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+
+/*Settings for all pages*/
+
+.pages {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*Sets superscript text*/
+
+sup {
+  font-size: 50%;
+}
+
+
+/*Sets h1 class*/
+
+h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+/*Sets h2 class*/
+
+h2 {
+  font-size: 1.5vh;
+  font-family: 'Lato', sans-serif;
+  opacity: 0.5;
+}
+
+
+/*Sets span tag*/
+
+span {
+  background-color: #EAC81C;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+
+/*---TOP NAVIGATION BAR---*/
+
+
+/*Sets navbar*/
+
+.navBar {
+  width: 100%;
+  height: 6%;
+  position: fixed;
+  z-index: 3;
+}
+
+
+/*Sets nav*/
+
+nav {
+  max-width: 100%;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -7%;
+  transition: margin-top 0.5s linear;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*Sets nav and unordered lists*/
+
+nav ul {
+  text-align: center;
+}
+
+
+/*Sets nav, unordered lists and lists*/
+
+nav ul li {
+  display: inline-block;
+}
+
+
+/*Sets nav, unordered lists, lists and a tags*/
+
+nav ul li a {
+  padding: 18px;
+  font-family: 'Abril Fatface', cursive;
+  text-transform: uppercase;
+  color: black;
+  font-size: 250%;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/*Sets ul and li hover states*/
+
+ul li a:hover {
+  background-color: #EAC81C;
+  color: #59367F;
+}
+
+
+/*Sets nav hover state*/
+
+.navBar:hover nav {
+  margin-top: -1%
+}
+
+
+/*Sets button for timeline dropdown icon*/
+
+.timelineBtn {
+  visibility: visible;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1vw;
+  width: 100%;
+  height: 100%;
+  margin-top: -3%;
+  line-height: 50%;
+  margin-top: 0.75%;
+  transition: margin-top 0.5s linear;
+}
+
+
+/*Sets timeline button hover state*/
+
+.navBar:hover .timelineBtn {
+  margin-top: 0.75%;
+}
+
+
+/*Sets Google Material icons*/
+
+.material-icons.md-48 {
+  font-size: 42px;
+}
+
+/*---LIGHTBOX---*/
+
+
+/*Sets Lightbox*/
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*Sets Lightbox and image tag*/
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin: 5%;
+  padding: 5%
+}
+
+
+/*Sets Lightbox target*/
+
+.lightbox:target {
+  display: block;
+}
+
+
+/*Sets thumbnail*/
+
+.thumbnail {
+  max-width: 40%;
+}
+
+/*---WEBSITE BODY CONTENTS---*/
+
+
+/*Sets website title*/
+
+.siteTitle {
+  width: 34%;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  font-family: 'Abril Fatface', cursive;
+  text-align: left;
+  font-size: 7vh;
+  line-height: 0.9;
+  height: 100vh;
+  float: left;
+  height: 50%;
+}
+
+
+/*Sets tribute text*/
+
+.tributeText {
+  width: 30%;
+  margin-top: 45vh;
+  margin-bottom: 25vh;
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+  font-size: 2.5vh;
+  height: 100vh;
+  float: left;
+  height: 20%;
+}
+
+
+/*Sets quote column (aligned right)*/
+
+.quoteColumn {
+  width: 34%;
+  margin-top: 25vh;
+  margin-bottom: auto;
+  font-family: 'Abril Fatface', cursive;
+  text-align: right;
+  font-size: 2.5vh;
+  color: white;
+  float: left;
+  height: 50%;
+}
+
+
+/*Sets quote column (aligned left)*/
+
+.quoteColumnL {
+  width: 34%;
+  margin-top: 25vh;
+  margin-bottom: auto;
+  font-family: 'Abril Fatface', cursive;
+  text-align: left;
+  font-size: 2.5vh;
+  color: white;
+  float: left;
+  height: 50%;
+}
+
+
+/*Sets page fourteen's longer quote column (aligned right)*/
+
+.quoteColumnMin {
+  width: 34%;
+  margin-top: 10vh;
+  margin-bottom: auto;
+  font-family: 'Abril Fatface', cursive;
+  text-align: right;
+  font-size: 2.5vh;
+  color: white;
+  float: left;
+  height: 60%;
+}
+
+
+/*Sets text column (aligned left)*/
+
+.textColumn {
+  width: 34%;
+  margin-top: 25vh;
+  margin-bottom: auto;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 1.7vh;
+  float: left;
+  line-height: 6vh;
+}
+
+
+/*Sets text column (aligned right)*/
+
+.textColumnR {
+  width: 34%;
+  margin-top: 25vh;
+  margin-bottom: auto;
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+  font-size: 1.7vh;
+  float: left;
+  line-height: 6vh;
+}
+
+
+/*Sets full-width margin*/
+
+.marginFull {
+  width: 8%;
+  height: 100vh;
+  float: left;
+}
+
+
+/*Sets half-width margin*/
+
+.marginHalf {
+  width: 4%;
+  height: 100vh;
+  float: left;
+}
+
+
+/*Sets year column*/
+
+.yearColumn {
+  width: 8%;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 7vh;
+  line-height: 0.7;
+  padding-bottom: 0;
+  float: left;
+  height: 100vh;
+}
+
+
+/*Sets year number*/
+
+.yearNumber {
+  margin-top: 20%
+}
+
+
+/*Sets center line for title page*/
+
+.centerBlockTitle {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: black;
+  margin-top: 25vh;
+  margin-left: 50%;
+}
+
+
+/*Sets center line (normal)*/
+
+.centerBlock {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: black;
+  margin-left: 50%;
+}
+
+
+/*Sets center line (longer)*/
+
+.centerBlockL {
+  display: inline-block;
+  width: 15%;
+  height: 110%;
+  background-color: black;
+  margin-left: 50%;
+}
+
+
+/*Sets line above body text (right)*/
+
+.textBlock {
+  display: inline-block;
+  width: 140%;
+  height: 0.4vh;
+  background-color: black;
+  margin-left: -6%;
+  margin-bottom: 5%
+}
+
+
+/*Sets line above body text (left)*/
+
+.textBlockL {
+  display: inline-block;
+  width: 128%;
+  height: 0.4vh;
+  background-color: black;
+  margin-left: -24%;
+  margin-bottom: 5%
+}
+
+
+/*---IMAGE GALLERY---*/
+
+
+/*Sets hover icon*/
+
+.iconHover {
+  width: 45%;
+  display: none;
+}
+
+
+/*Sets image icon*/
+
+.iconOpen {
+  width: 80%;
+}
+
+
+/*Sets image button*/
+
+.imgButton {
+  margin-top: 300%;
+  width: 100%;
+}
+
+
+/*Sets image icon hover state*/
+
+.imgButton:hover .iconOpen {
+  display: none;
+}
+
+
+/*Sets hover icon hover state*/
+
+.imgButton:hover .iconHover {
+  display: inline;
+}
+
+
+/*Sets caption for all images*/
+
+.imgCaption {
+  margin-top: 5%;
+  margin-bottom: -5%;
+  text-decoration: none;
+  font-size: 1.2vw;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+/*---AUDIO PLAYER---*/
+
+/*Sets YouTube audio player*/
+
+.musicButton {
+  margin-top: 170%;
+  margin-left: 25%;
+  width: 100%;
+}
+
+
+/*---PAGE BACKGORUNDS---*/
+
+
+/*Sets Page 2 background image*/
+
+.page_2 {
+  background-image: url(../images/page_2/bkg_2.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 3 background image*/
+
+.page_3 {
+  background: url(../images/page_3/bkg_3.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 5 background image*/
+
+.page_5 {
+  background: url(../images/page_5/bkg_5.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 6 background image*/
+
+.page_6 {
+  background: url(../images/page_6/bkg_6.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 8 background image*/
+
+.page_8 {
+  background: url(../images/page_8/bkg_8.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 9 background image*/
+
+.page_9 {
+  background: url(../images/page_9/bkg_9.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 11 background image*/
+
+.page_11 {
+  background: url(../images/page_11/bkg_11.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 12 background image*/
+
+.page_12 {
+  background: url(../images/page_12/bkg_12.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 14 background image*/
+
+.page_14 {
+  background: url(../images/page_14/bkg_14.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 15 background image*/
+
+.page_15 {
+  background: url(../images/page_15/bkg_15.png);
+  background-size: 100%;
+}
+
+
+/*Sets Page 17 background image*/
+
+.page_17 {
+  background: url(../images/page_17/bkg_17.png);
+  background-size: 100%;
+}
+
+
+/*---HANDWRITING PAGES---*/
+
+
+/*Sets handwriting div*/
+
+.writing {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*Sets writing SVG images*/
+
+.writingImg {
+  height: 90vh;
+  margin-top: 30%;
+  margin-bottom: auto;
+  margin-left: 35%;
+}
+
+
+/*Sets Page 4 background image*/
+
+.page_4 {
+  background: url(../images/page_4/writing_background_1.png);
+  background-size: 100vw;
+  background-attachment: fixed;
+  height: 200vh;
+}
+
+
+/*Sets Page 7 background image*/
+
+.page_7 {
+  background: url(../images/page_7/writing_background_2.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 200vh;
+}
+
+
+/*Sets Page 10 background image*/
+
+.page_10 {
+  background: url(../images/page_10/writing_background_3.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 200vh;
+}
+
+
+/*Sets Page 13 background image*/
+
+.page_13 {
+  background: url(../images/page_13/writing_background_4.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 200vh;
+}
+
+
+/*Sets Page 16 background image*/
+
+.page_16 {
+  background: url(../images/page_16/writing_background_5.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 200vh;
+}
+
+
+/*---PAGE 19---*/
+
+
+/*Sets SVG for penulitmate quote*/
+
+.vectorQuote {
+  height: 60vh;
+  margin-top: 7%;
+  margin-bottom: auto;
+  margin-left: 25%;
+}
+
+
+/*Sets Page 20*/
+
+.page_19 {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*---PAGE 20---*/
+
+
+/*Sets block around final quote*/
+
+.blockPass {
+  margin-top: 15%;
+  display: inline-block;
+  width: 60%;
+  height: 30%;
+  background: #EAC81C;
+  transform-style: preserve-3d;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 20%;
+}
+
+
+/*Sets text for final quote*/
+
+.passOn {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #59367F;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 10vh;
+  margin-top: 6%;
+  transform: translateZ(30px);
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.copyright{
+  text-align: center;
+}
